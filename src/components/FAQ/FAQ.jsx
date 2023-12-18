@@ -1,5 +1,5 @@
-import { Button } from 'components/Button/Button';
 import css from './FAQ.module.scss';
+import { Button } from 'components/Button/Button';
 
 export const FAQ = () => {
   return (

@@ -5,7 +5,7 @@ button {
   transition: color 0.3s ease, background-color 0.3s ease, filter 0.3s ease,
     border 0.3s ease;
   font-weight: 500;
-  padding: 15px 30px;
+  padding: 12px 30px;
   border-radius: 5px;
 
   &:hover {
@@ -17,13 +17,19 @@ button {
   color: get-color('white');
   background-color: get-color('blue');
   border: 2px solid get-color('blue');
-  padding: 13px 28px;
+  padding: 10px 28px;
 
   &:hover {
     color: get-color('blue');
     background-color: get-color('white');
     filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.232));
     border: 2px solid get-color('blue');
+  }
+
+  &:focus {
+    border: 2px solid get-color('blue');
+    background-color: get-color('white');
+    color: get-color('blue');
   }
 }
 
@@ -33,18 +39,29 @@ button {
     background-color: get-color('blue');
     filter: drop-shadow(2px 2px 4px rgba(0, 34, 255, 0.232));
   }
+
+  &:focus {
+    border: 2px solid get-color('blue');
+    background-color: get-color('white');
+  }
 }
 
 .orange-theme {
   color: get-color('white');
   background-color: get-color('orange');
   border: 2px solid get-color('orange');
-  padding: 13px 28px;
+  padding: 10px 28px;
 
   &:hover {
     color: get-color('orange');
     background-color: get-color('white');
     filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.232));
     border: 2px solid get-color('orange');
+  }
+
+  &:focus {
+    border: 2px solid get-color('orange');
+    background-color: get-color('white');
+    color: get-color('orange');
   }
 }

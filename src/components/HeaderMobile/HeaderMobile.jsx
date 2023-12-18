@@ -1,5 +1,5 @@
-import css from './HeaderMobile.module.scss';
 import { Link } from 'react-router-dom';
+import css from './HeaderMobile.module.scss';
 import { ReactComponent as Logo } from '../../images/logo-bookmark.svg';
 import { ReactComponent as Hamburger } from '../../images/icon-hamburger.svg';
 

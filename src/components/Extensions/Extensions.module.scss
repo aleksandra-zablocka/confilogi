@@ -36,7 +36,7 @@
 
   @include mixins.mq(desktop) {
     flex-direction: row;
-    gap: 90px;
+    gap: 25px;
   }
 }
 
@@ -82,6 +82,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.browser__description > p {
+  color: get-color('grey');
 }
 
 .chrome {

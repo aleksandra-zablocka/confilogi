@@ -2,27 +2,14 @@
 @import '../../styles/utils/vars';
 
 .container {
-  // background-color: get-color('blue');
+  width: 100%;
+  background-color: get-color('blue');
   padding: 70px 0;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1000%;
-    width: 100vw;
-    height: 100%;
-    background-color: get-color('blue');
-    z-index: -1;
-  }
 }
 
 .text {
@@ -30,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   color: get-color('white');
 }
 
@@ -56,7 +43,7 @@
 
 .newsletter__input {
   font-weight: 400;
-  padding: 15px 30px;
+  padding: 12px 30px;
   border-radius: 5px;
   color: get-color('grey');
 
@@ -68,60 +55,3 @@
     width: 350px;
   }
 }
-
-// @use '../../styles/utils/mixins';
-// @import '../../styles/utils/vars';
-
-// .container {
-//   background-color: get-color('blue');
-//   padding: 70px 0;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 50px;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .text {
-//   max-width: 650px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   gap: 20px;
-//   color: get-color('white');
-// }
-
-// .counter {
-//   text-align: center;
-//   text-transform: uppercase;
-//   letter-spacing: 4px;
-//   font-weight: 500;
-// }
-
-// .newsletter__form {
-//   width: 350px;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 15px;
-
-//   @include mixins.mq(desktop) {
-//     flex-direction: row;
-//     justify-content: center;
-//     width: 750px;
-//   }
-// }
-
-// .newsletter__input {
-//   font-weight: 400;
-//   padding: 15px 30px;
-//   border-radius: 5px;
-//   color: get-color('grey');
-
-//   &::placeholder {
-//     color: get-color('grey');
-//   }
-
-//   @include mixins.mq(desktop) {
-//     width: 350px;
-//   }
-// }

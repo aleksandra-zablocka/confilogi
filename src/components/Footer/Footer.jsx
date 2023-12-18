@@ -7,7 +7,7 @@ import { NavigationFooter } from 'components/NavigationFooter/NavigationFooter';
 
 export const Footer = () => {
   return (
-    <div>
+    <div className={css.view}>
       <div className={css.footer__container}>
         <div className={css.logoAndNav}>
           <Link to="/home" className={css.footer__logo}>

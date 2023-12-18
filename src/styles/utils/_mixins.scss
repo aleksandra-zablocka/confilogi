@@ -1,11 +1,13 @@
 $breakpoints: (
-  // 'mobile': 375px,
-  'desktop': 676px
+  // 'mobile': 575px,
+  // 'desktop': 1440px,
+  // 'mobile': 0px,
+  'desktop': 376px
 );
 
-@mixin mq($device) {
-  @if map_has_key($breakpoints, $device) {
-    $width: map-get($breakpoints, $device);
+@mixin mq($width) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map-get($breakpoints, $width);
     @media screen and (min-width: $width) {
       @content;
     }

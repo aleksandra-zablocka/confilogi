@@ -2,10 +2,11 @@
 @import '../../styles/utils/vars';
 
 .container {
+  // width: 100%;
   padding: 30px;
   display: flex;
+  gap: 20px;
   flex-direction: column;
-  gap: 100px;
   justify-content: center;
   align-items: center;
 
@@ -13,6 +14,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    gap: 100px;
   }
 }
 
@@ -26,28 +28,13 @@
   background-image: url('../../images/illustration-hero.svg');
   position: relative;
 
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   top: 85px;
-  //   left: calc(50% - 70px);
-  //   min-width: 200px;
-  //   width: 1000%;
-  //   height: 80%;
-  //   background-color: get-color('blue');
-  //   z-index: -1;
-  //   border-bottom-left-radius: 110px;
-  //   border-top-left-radius: 110px;
-  // }
-
   &::after {
     content: '';
     position: absolute;
-    top: 85px;
-    left: calc(50% - 70px);
-    min-width: 200px;
-    width: 1000%;
-    height: 80%;
+    top: 115px;
+    right: -30px;
+    width: 90%;
+    height: 60%;
     background-color: get-color('blue');
     z-index: -1;
     border-bottom-left-radius: 110px;
@@ -70,6 +57,13 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  @include mixins.mq(desktop) {
+    > h1 {
+      text-align: left;
+    }
+    align-items: flex-start;
+  }
 }
 
 .buttons {

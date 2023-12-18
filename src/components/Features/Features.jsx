@@ -1,5 +1,5 @@
-import css from './Features.module.scss';
 import { useState } from 'react';
+import css from './Features.module.scss';
 
 export const Features = () => {
   const [activeItem, setActiveItem] = useState(null);
@@ -13,7 +13,7 @@ export const Features = () => {
       <div className={css.text}>
         <h2>Features</h2>
         <p className={css.textCenter}>
-          Our aim is to make it quick and easy for you to access your favorite
+          Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
         </p>

@@ -1,15 +1,14 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import favicon from '../../images/favicon-32x32.png';
 import { Helmet } from 'react-helmet';
 import './SharedLayout.scss';
-
+import favicon from '../../images/favicon-32x32.png';
 import { Header } from 'components/Header/Header';
 import { HeaderMobile } from 'components/HeaderMobile/HeaderMobile';
 import { Footer } from 'components/Footer/Footer';
 
 export const SharedLayout = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 575 });
+  const isMobile = useMediaQuery({ maxWidth: 375 });
 
   return (
     <div>

@@ -1,9 +1,9 @@
-import { Button } from 'components/Button/Button';
-import css from './OneClick.module.scss';
 import { useMediaQuery } from 'react-responsive';
+import css from './OneClick.module.scss';
+import { Button } from 'components/Button/Button';
 
 export const OneClick = () => {
-  const isMobile = useMediaQuery({ maxWidth: 575 });
+  const isMobile = useMediaQuery({ maxWidth: 375 });
 
   return (
     <section className={css.container}>
@@ -19,7 +19,7 @@ export const OneClick = () => {
         </div>
         {!isMobile && (
           <div>
-            <Button>More info</Button>
+            <Button theme="blue">More info</Button>
           </div>
         )}
       </div>

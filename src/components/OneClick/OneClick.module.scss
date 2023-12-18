@@ -2,15 +2,17 @@
 @import '../../styles/utils/vars';
 
 .container {
+  // width: 100%;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 
   @include mixins.mq(desktop) {
     flex-direction: row;
+    gap: 50px;
   }
 }
 
@@ -27,11 +29,10 @@
   &::after {
     content: '';
     position: absolute;
-    top: 85px;
-    right: calc(50% - 70px);
-    min-width: 200px;
-    width: 1000%;
-    height: 95%;
+    top: 75px;
+    left: -50px;
+    width: 90%;
+    height: 85%;
     background-color: get-color('blue');
     z-index: -1;
     border-bottom-right-radius: 110px;
@@ -58,6 +59,7 @@
 
   @include mixins.mq(desktop) {
     margin-top: 0;
+    align-items: flex-start;
   }
 }
 

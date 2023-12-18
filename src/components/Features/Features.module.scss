@@ -39,6 +39,8 @@
   height: 50px;
   cursor: pointer;
   position: relative;
+  color: get-color('grey');
+  transition: color 0.3s ease;
 
   &::before {
     content: '';
@@ -57,6 +59,8 @@
 
   &:hover,
   &:focus {
+    color: get-color('black');
+
     &::after {
       content: '';
       position: absolute;
@@ -78,7 +82,8 @@
   height: 50px;
   cursor: pointer;
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
+  color: get-color('black');
 
   &::before {
     content: '';
