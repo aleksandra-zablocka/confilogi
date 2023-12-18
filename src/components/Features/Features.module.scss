@@ -1,0 +1,110 @@
+@use '../../styles/utils/mixins';
+@import '../../styles/utils/vars';
+
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+  color: get-color('grey');
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include mixins.mq(desktop) {
+    flex-direction: row;
+    gap: 90px;
+  }
+}
+
+.featuresItem {
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 1px;
+    background-color: get-color('grey');
+
+    @include mixins.mq(desktop) {
+      width: 250px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 7px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 3px;
+      background-color: get-color('orange');
+
+      @include mixins.mq(desktop) {
+        width: 250px;
+      }
+    }
+  }
+}
+
+.isActive {
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 1px;
+    background-color: get-color('grey');
+
+    @include mixins.mq(desktop) {
+      width: 250px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background-color: get-color('orange');
+    @include mixins.mq(desktop) {
+      width: 250px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../styles/utils/vars';
+
+button {
+  color: get-color('black');
+  transition: color 0.3s ease, background-color 0.3s ease, filter 0.3s ease;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 10px;
+
+  &:hover {
+    color: get-color('white');
+    background-color: get-color('blue');
+    filter: drop-shadow(2px 2px 4px rgba(0, 34, 255, 0.232));
+    cursor: pointer;
+  }
+}

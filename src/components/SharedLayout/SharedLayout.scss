@@ -1,0 +1,9 @@
+@use '../../styles/utils/mixins';
+
+body {
+  margin: 0;
+
+  @include mixins.mq(desktop) {
+    margin: 0 60px;
+  }
+}

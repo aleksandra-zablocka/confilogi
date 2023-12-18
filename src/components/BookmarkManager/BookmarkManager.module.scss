@@ -1,0 +1,55 @@
+@use '../../styles/utils/mixins';
+@import '../../styles/utils/vars';
+
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+
+  @include mixins.mq(desktop) {
+    flex-direction: row-reverse;
+  }
+}
+
+.heroIllustration {
+  width: 100%;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../../images/illustration-hero.svg');
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 85px;
+    left: calc(50% - 100px);
+    width: 90%;
+    height: 80%;
+    background-color: get-color('blue');
+    z-index: -1;
+    border-bottom-left-radius: 110px;
+  }
+}
+
+p {
+  text-align: center;
+  color: get-color('grey');
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}

@@ -1,7 +1,5 @@
 import React from 'react';
-
 import { NavLink, useMatch, useResolvedPath } from 'react-router-dom';
-
 import css from './ActiveNavLink.module.scss';
 
 const ActiveNavLink = ({ to, children }) => {

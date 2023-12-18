@@ -2,36 +2,11 @@
   @return map-get($colors, $key);
 }
 
-@function get-font($key) {
-  @return map-get($fonts, $key);
-}
-
-@function get-font-size($key) {
-  @return map-get($fonts-size, $key);
-}
-
-$fonts: (
-  'primary': 'Circe',
-  'secondary': 'Poppins',
-);
-
-$fonts-size: (
-  'primary': 18px,
-  'secondary': 16px,
-  'title': 30px,
-  'button': 18px,
-);
-
 $colors: (
   'white': #ffffff,
-
   'black': #000000,
-
-  //   'gray1': #bdbdbd,
-  'gray1': #a6a6a6,
-  'gray2': #455a64,
-
-  'blue': #5661db,
-
-  'orange': #f14b4b,
+  'grey': hsl(229, 8%, 60%),
+  'blue': hsl(231, 69%, 60%),
+  'darkblue': hsl(229, 31%, 21%),
+  'orange': hsl(0, 94%, 66%),
 );
