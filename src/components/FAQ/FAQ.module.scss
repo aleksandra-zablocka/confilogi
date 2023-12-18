@@ -28,12 +28,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 25px;
 }
 
 .FAQItem {
-  height: 50px;
   cursor: pointer;
   width: 370px;
+}
+
+.question {
+  height: 50px;
   position: relative;
   transition: color 0.3s ease;
 
@@ -63,4 +67,41 @@
   &:focus {
     color: get-color('orange');
   }
+}
+
+.questionExpanded {
+  height: 50px;
+  position: relative;
+  font-weight: 500;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: get-color('grey');
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 10px;
+    background-image: url('../../images/icon-arrow2.svg');
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
+}
+
+.answerHidden {
+  display: none;
+}
+
+.answerVisible {
+  display: block;
 }
