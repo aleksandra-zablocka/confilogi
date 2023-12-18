@@ -7,30 +7,28 @@ import { NavigationFooter } from 'components/NavigationFooter/NavigationFooter';
 
 export const Footer = () => {
   return (
-    <div className={css.view}>
-      <div className={css.footer__container}>
-        <div className={css.logoAndNav}>
-          <Link to="/home" className={css.footer__logo}>
-            <Logo />
-          </Link>
-          <NavigationFooter />
-        </div>
-        <div className={css.icons}>
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Facebook />
-          </a>
-          <a
-            href="https://www.twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Twitter />
-          </a>
-        </div>
+    <div className={css.footer__container}>
+      <div className={css.logoAndNav}>
+        <Link to="/home" className={css.footer__logo}>
+          <Logo />
+        </Link>
+        <NavigationFooter />
+      </div>
+      <div className={css.icons}>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Facebook />
+        </a>
+        <a
+          href="https://www.twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Twitter />
+        </a>
       </div>
     </div>
   );

@@ -2,9 +2,9 @@
 @import '../../styles/utils/vars';
 
 .container {
-  width: 100%;
+  // width: 100%;
+  padding: 30px;
   background-color: get-color('blue');
-  padding: 70px 0;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -13,7 +13,7 @@
 }
 
 .text {
-  max-width: 650px;
+  max-width: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;

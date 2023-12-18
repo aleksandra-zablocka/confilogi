@@ -2,16 +2,12 @@
 @import '../../styles/utils/vars';
 
 .container {
-  padding: 60px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 50px;
-
-  @include mixins.mq(desktop) {
-    gap: 0;
-  }
 }
 
 .textCenter {
@@ -30,13 +26,10 @@
 .extensionsList {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
 
   @include mixins.mq(desktop) {
     flex-direction: row;
-    gap: 25px;
   }
 }
 
@@ -58,6 +51,8 @@
   }
 
   @include mixins.mq(desktop) {
+    width: 260px;
+
     &:nth-child(2) {
       margin-top: 40px;
     }

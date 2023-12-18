@@ -2,8 +2,8 @@
 @import '../../styles/utils/vars';
 
 .container {
-  width: 100%;
-  max-width: 1440px;
+  // width: 100%;
+  // max-width: 1440px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -30,11 +30,10 @@
   &::after {
     content: '';
     position: absolute;
-    top: 75px;
-    left: 0;
+    top: 85px;
     left: -30px;
-    width: 70%;
-    height: 85%;
+    width: 80%;
+    height: 90%;
     background-color: get-color('blue');
     z-index: -1;
     border-bottom-right-radius: 110px;
