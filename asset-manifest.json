@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/confilogi/static/css/main.33c96113.css",
+    "main.js": "/confilogi/static/js/main.c32e693b.js",
+    "static/media/illustration-hero.svg": "/confilogi/static/media/illustration-hero.07801d05cb11930f0c82.svg",
+    "static/media/logo-bookmark.svg": "/confilogi/static/media/logo-bookmark.d426263a94701e122e7d14b0c6eee7ce.svg",
+    "index.html": "/confilogi/index.html",
+    "static/media/icon-hamburger.svg": "/confilogi/static/media/icon-hamburger.4385fd507d24f37ccbb3ae359b5c9555.svg",
+    "main.33c96113.css.map": "/confilogi/static/css/main.33c96113.css.map",
+    "main.c32e693b.js.map": "/confilogi/static/js/main.c32e693b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33c96113.css",
+    "static/js/main.c32e693b.js"
+  ]
+}
