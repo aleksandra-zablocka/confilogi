@@ -1,0 +1,68 @@
+@use '../../styles/utils/mixins';
+@import '../../styles/utils/vars';
+
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+
+  @include mixins.mq(desktop) {
+    flex-direction: row;
+  }
+}
+
+.illustration {
+  min-width: 200px;
+  width: 90%;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../../images/illustration-features-tab-1.svg');
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 85px;
+    right: calc(50% - 70px);
+    min-width: 200px;
+    width: 1000%;
+    height: 95%;
+    background-color: get-color('blue');
+    z-index: -1;
+    border-bottom-right-radius: 110px;
+    border-top-right-radius: 110px;
+  }
+}
+
+.textLeft {
+  text-align: center;
+  color: get-color('grey');
+
+  @include mixins.mq(desktop) {
+    text-align: left;
+  }
+}
+
+.text {
+  max-width: 650px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include mixins.mq(desktop) {
+    margin-top: 0;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

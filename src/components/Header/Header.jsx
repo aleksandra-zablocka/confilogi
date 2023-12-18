@@ -10,7 +10,7 @@ export const Header = () => {
         <Link to="/home" className={css.header__logo}>
           <Logo />
         </Link>
-        <Navigation />
+        <Navigation theme="row" />
       </div>
     </div>
   );

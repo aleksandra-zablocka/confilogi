@@ -8,8 +8,9 @@ import { SharedLayout } from 'components/SharedLayout/SharedLayout';
 export const App = () => {
   return (
     <div>
-      <SharedLayout />
-      <Home />
+      <SharedLayout>
+        <Home />
+      </SharedLayout>
     </div>
   );
 };

@@ -1,20 +1,36 @@
 import css from './Footer.module.scss';
-import sprite from 'images/icons.svg';
 import { Link } from 'react-router-dom';
+import { ReactComponent as Logo } from '../../images/logo-bookmark-white.svg';
+import { ReactComponent as Facebook } from '../../images/icon-facebook.svg';
+import { ReactComponent as Twitter } from '../../images/icon-twitter.svg';
+import { NavigationFooter } from 'components/NavigationFooter/NavigationFooter';
 
 export const Footer = () => {
   return (
     <div>
-      <div className={css.header__container}>
-        <Link to="/home" className={css.header__logo}>
-          <div className={css.logo__iconBg}>
-            <svg className={css.logo__icon} width="15px" height="15px">
-              <use href={`${sprite}#icon-bookmark`}></use>
-            </svg>
-          </div>
-          <p className={css.header__title}>BOOKMARK</p>
-        </Link>
-        {/* <Navigation /> */}
+      <div className={css.footer__container}>
+        <div className={css.logoAndNav}>
+          <Link to="/home" className={css.footer__logo}>
+            <Logo />
+          </Link>
+          <NavigationFooter />
+        </div>
+        <div className={css.icons}>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook />
+          </a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Twitter />
+          </a>
+        </div>
       </div>
     </div>
   );

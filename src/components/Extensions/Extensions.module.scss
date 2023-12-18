@@ -1,0 +1,106 @@
+@use '../../styles/utils/mixins';
+@import '../../styles/utils/vars';
+
+.container {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  @include mixins.mq(desktop) {
+    gap: 0;
+  }
+}
+
+.textCenter {
+  text-align: center;
+  color: get-color('grey');
+}
+
+.text {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.extensionsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  @include mixins.mq(desktop) {
+    flex-direction: row;
+    gap: 90px;
+  }
+}
+
+.extensionsItem {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 370px;
+  width: 270px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07), 0 0 16px rgba(0, 0, 0, 0.222);
+  }
+
+  @include mixins.mq(desktop) {
+    &:nth-child(2) {
+      margin-top: 40px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 80px;
+    }
+  }
+}
+
+.browser {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.browser__img {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.chrome {
+  background-image: url('../../images/logo-chrome.svg');
+}
+
+.firefox {
+  background-image: url('../../images/logo-firefox.svg');
+}
+
+.opera {
+  background-image: url('../../images/logo-opera.svg');
+}
+
+.dots {
+  width: 100%;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../../images/bg-dots.svg');
+}

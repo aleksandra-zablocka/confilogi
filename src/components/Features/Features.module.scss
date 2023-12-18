@@ -10,12 +10,13 @@
   align-items: center;
 }
 
-p {
+.textCenter {
   text-align: center;
   color: get-color('grey');
 }
 
 .text {
+  max-width: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +43,7 @@ p {
   &::before {
     content: '';
     position: absolute;
-    bottom: 7px;
+    bottom: 9px;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
@@ -59,7 +60,7 @@ p {
     &::after {
       content: '';
       position: absolute;
-      bottom: 7px;
+      bottom: 9px;
       left: 50%;
       transform: translateX(-50%);
       width: 150px;
@@ -82,7 +83,7 @@ p {
   &::before {
     content: '';
     position: absolute;
-    bottom: 7px;
+    bottom: 9px;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
@@ -97,7 +98,7 @@ p {
   &::after {
     content: '';
     position: absolute;
-    bottom: 7px;
+    bottom: 9px;
     left: 50%;
     transform: translateX(-50%);
     width: 150px;

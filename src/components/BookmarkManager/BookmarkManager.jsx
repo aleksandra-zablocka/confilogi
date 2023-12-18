@@ -4,10 +4,10 @@ import css from './BookmarkManager.module.scss';
 export const BookmarkManager = () => {
   return (
     <section className={css.container}>
-      <div className={css.heroIllustration} />
+      <div className={css.illustration} />
       <div className={css.text}>
         <h2>A Simple Bookmark Manager</h2>
-        <p>
+        <p className={css.textLeft}>
           A clean and simple interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>

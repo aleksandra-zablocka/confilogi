@@ -1,9 +1,10 @@
-@use '../../styles/utils/mixins';
+// @use '../../styles/utils/mixins';
 
-body {
-  margin: 0;
+// body {
+//   max-width: 1440px;
+//   margin: 0 auto;
 
-  @include mixins.mq(desktop) {
-    margin: 0 60px;
-  }
-}
+//   @include mixins.mq(desktop) {
+//     margin: 0 60px;
+//   }
+// }
