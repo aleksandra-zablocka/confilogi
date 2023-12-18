@@ -35,31 +35,29 @@
       // Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
-      (function () {
-        'use strict';
-        var path = window.location.pathname;
-
-        // Normalize path
-        path = path.replace(/\/$/, '');
-
-        if (
-          window.location.search.length > 0 ||
-          window.location.hash.length > 0
-        ) {
-          path += window.location.search + window.location.hash;
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
         }
-
-        if (path[path.length - 1] === '/') {
-          path = path.slice(0, -1);
-        }
-
-        var scripts = document.getElementsByTagName('script');
-        var script = scripts[scripts.length - 1];
-
-        var base = document.createElement('base');
-        base.href = path;
-        script.parentNode.insertBefore(base, script);
-      })();
+      })(window.location);
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
   </head>
