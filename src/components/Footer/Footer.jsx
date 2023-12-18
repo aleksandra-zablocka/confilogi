@@ -14,7 +14,7 @@ export const Footer = () => {
           </div>
           <p className={css.header__title}>BOOKMARK</p>
         </Link>
-        <Navigation />
+        {/* <Navigation /> */}
       </div>
     </div>
   );
