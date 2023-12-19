@@ -13,8 +13,6 @@
 
   @include mixins.mq(desktop) {
     flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
     // gap: 100px;
   }
 }
