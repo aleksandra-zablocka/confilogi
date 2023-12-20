@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import css from './ModalHamburger.module.scss';
-import { ReactComponent as Logo } from '../../images/logo-bookmark-white.svg';
+import { ReactComponent as Logo } from '../../images/logo-bookmark-all-white.svg';
 import { NavigationMobile } from 'components/NavigationMobile/NavigationMobile';
 import { ReactComponent as Facebook } from '../../images/icon-facebook.svg';
 import { ReactComponent as Twitter } from '../../images/icon-twitter.svg';
