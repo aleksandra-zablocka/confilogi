@@ -43,6 +43,7 @@ button {
   &:focus {
     border: 2px solid get-color('blue');
     background-color: get-color('white');
+    color: get-color('blue');
   }
 }
 

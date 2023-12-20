@@ -1,7 +1,7 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Helmet } from 'react-helmet';
-import './SharedLayout.scss';
+import css from './SharedLayout.module.scss';
 import favicon from '../../images/favicon-32x32.png';
 import { Header } from 'components/Header/Header';
 import { HeaderMobile } from 'components/HeaderMobile/HeaderMobile';
@@ -11,7 +11,7 @@ export const SharedLayout = ({ children }) => {
   const isMobile = useMediaQuery({ maxWidth: 375 });
 
   return (
-    <div>
+    <div className={css.container}>
       <Helmet>
         {' '}
         <link rel="icon" type="image/svg+xml" href={favicon} />

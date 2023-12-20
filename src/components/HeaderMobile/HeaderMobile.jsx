@@ -5,13 +5,13 @@ import { ReactComponent as Hamburger } from '../../images/icon-hamburger.svg';
 
 export const HeaderMobile = () => {
   return (
-    <div>
-      <div className={css.header__container}>
+    <div className={css.header__container}>
+      <div>
         <Link to="/home" className={css.header__logo}>
           <Logo />
         </Link>
-        <Hamburger className={css.menu__icon} />
       </div>
+      <Hamburger className={css.menu__icon} />
     </div>
   );
 };
