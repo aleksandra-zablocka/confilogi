@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/confilogi/static/css/main.0f16edd3.css",
-    "main.js": "/confilogi/static/js/main.8823aba8.js",
+    "main.css": "/confilogi/static/css/main.8d094504.css",
+    "main.js": "/confilogi/static/js/main.59eade16.js",
     "static/media/illustration-features-tab-2.svg": "/confilogi/static/media/illustration-features-tab-2.e933bd6d921c537d7743.svg",
     "static/media/illustration-hero.svg": "/confilogi/static/media/illustration-hero.07801d05cb11930f0c82.svg",
     "static/media/logo-bookmark.svg": "/confilogi/static/media/logo-bookmark.d426263a94701e122e7d14b0c6eee7ce.svg",
+    "static/media/logo-bookmark-all-white.svg": "/confilogi/static/media/logo-bookmark-all-white.fe2d60fd518c5febe23cb0ba0a1c9100.svg",
     "static/media/logo-bookmark-white.svg": "/confilogi/static/media/logo-bookmark-white.b662f10c88e0d89dbccb3d5cbc583c7e.svg",
     "static/media/illustration-features-tab-1.svg": "/confilogi/static/media/illustration-features-tab-1.0da3d302207bcad90cda.svg",
     "static/media/logo-chrome.svg": "/confilogi/static/media/logo-chrome.a42815a014c452e4d958.svg",
@@ -16,15 +17,16 @@
     "static/media/icon-facebook.svg": "/confilogi/static/media/icon-facebook.8b45ba94b5f75f0d38a9bbcc11df55c2.svg",
     "static/media/icon-error.svg": "/confilogi/static/media/icon-error.a46cc66573dea1a15acb.svg",
     "static/media/logo-opera.svg": "/confilogi/static/media/logo-opera.ff14e4763945338fe002.svg",
-    "static/media/icon-close.svg": "/confilogi/static/media/icon-close.d4fd5e7b2ef49d18f92f.svg",
+    "static/media/icon-close.svg": "/confilogi/static/media/icon-close.66f34264dac42a09823f.svg",
+    "static/media/icon-close-white.svg": "/confilogi/static/media/icon-close-white.2d9c2aeb751ae531ebce.svg",
     "static/media/icon-hamburger.svg": "/confilogi/static/media/icon-hamburger.4385fd507d24f37ccbb3ae359b5c9555.svg",
     "static/media/icon-arrow.svg": "/confilogi/static/media/icon-arrow.8174203a5d4fc44f5247.svg",
     "static/media/icon-arrow2.svg": "/confilogi/static/media/icon-arrow2.16bc69627be361cc6fa3.svg",
-    "main.0f16edd3.css.map": "/confilogi/static/css/main.0f16edd3.css.map",
-    "main.8823aba8.js.map": "/confilogi/static/js/main.8823aba8.js.map"
+    "main.8d094504.css.map": "/confilogi/static/css/main.8d094504.css.map",
+    "main.59eade16.js.map": "/confilogi/static/js/main.59eade16.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f16edd3.css",
-    "static/js/main.8823aba8.js"
+    "static/css/main.8d094504.css",
+    "static/js/main.59eade16.js"
   ]
 }
