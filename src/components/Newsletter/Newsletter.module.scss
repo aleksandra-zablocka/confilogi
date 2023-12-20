@@ -45,6 +45,7 @@
   margin-bottom: 20px;
 
   @include mixins.mq(desktop) {
+    align-items: baseline;
     flex-direction: row;
     justify-content: center;
   }
