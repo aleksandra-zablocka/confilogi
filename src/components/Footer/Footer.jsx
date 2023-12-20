@@ -1,5 +1,5 @@
-import css from './Footer.module.scss';
 import { Link } from 'react-router-dom';
+import css from './Footer.module.scss';
 import { ReactComponent as Logo } from '../../images/logo-bookmark-white.svg';
 import { ReactComponent as Facebook } from '../../images/icon-facebook.svg';
 import { ReactComponent as Twitter } from '../../images/icon-twitter.svg';

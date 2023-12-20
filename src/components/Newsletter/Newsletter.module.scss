@@ -12,6 +12,11 @@
   gap: 40px;
   justify-content: center;
   align-items: center;
+  padding-bottom: 90px;
+
+  @include mixins.mq(desktop) {
+    padding-bottom: 30px;
+  }
 }
 
 .text {
@@ -35,6 +40,8 @@
   width: 90%;
   display: flex;
   flex-direction: column;
+  // justify-content: center;
+  align-items: center;
   gap: 15px;
   margin-bottom: 20px;
 
@@ -69,10 +76,14 @@
 .error {
   background-color: get-color('orange');
   color: white;
-  padding-left: 22px;
+  padding-left: 8px;
   padding-bottom: 4px;
   border-radius: 5px;
   position: relative;
+
+  @include mixins.mq(desktop) {
+    padding-left: 22px;
+  }
 
   &::after {
     content: '';

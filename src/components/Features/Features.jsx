@@ -1,8 +1,18 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import css from './Features.module.scss';
+import { Modal } from 'components/Modal/Modal';
 
 export const Features = () => {
   const [activeItem, setActiveItem] = useState(null);
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   const handleClick = index => {
     setActiveItem(index);
@@ -27,7 +37,10 @@ export const Features = () => {
         </li>
         <li
           className={activeItem === 1 ? css.isActive : css.featuresItem}
-          onClick={() => handleClick(1)}
+          onClick={() => {
+            handleClick(1);
+            openModal();
+          }}
         >
           Speedy Searching
         </li>
@@ -38,6 +51,7 @@ export const Features = () => {
           Easy Sharing
         </li>
       </ul>
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 };

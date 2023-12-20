@@ -24,7 +24,7 @@ export const Home = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       openModal();
-    }, 5000);
+    }, 30000);
 
     return () => clearTimeout(timeoutId);
   }, []);

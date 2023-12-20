@@ -1,8 +1,8 @@
 import { useMediaQuery } from 'react-responsive';
-import css from './PopUp1.module.scss';
+import css from './PopUp.module.scss';
 import { Button } from 'components/Button/Button';
 
-export const PopUp1 = () => {
+export const PopUp = () => {
   const isMobile = useMediaQuery({ maxWidth: 375 });
 
   return (
