@@ -13,8 +13,8 @@ export const OneClick = () => {
           <h2>Bookmark in one click</h2>
           <p className={css.textLeft}>
             Organize your bookmarks however you like. Our simple drag-and-drop
-            interface gives you complete control over how you manager your
-            favorite sites.
+            interface gives you complete control over how you manage your
+            favourite sites.
           </p>
         </div>
         {!isMobile && (
