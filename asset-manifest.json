@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/confilogi/static/css/main.15c63c2b.css",
-    "main.js": "/confilogi/static/js/main.59eade16.js",
+    "main.js": "/confilogi/static/js/main.572217b8.js",
     "static/media/illustration-features-tab-2.svg": "/confilogi/static/media/illustration-features-tab-2.e933bd6d921c537d7743.svg",
     "static/media/illustration-hero.svg": "/confilogi/static/media/illustration-hero.07801d05cb11930f0c82.svg",
     "static/media/logo-bookmark.svg": "/confilogi/static/media/logo-bookmark.d426263a94701e122e7d14b0c6eee7ce.svg",
@@ -23,10 +23,10 @@
     "static/media/icon-arrow.svg": "/confilogi/static/media/icon-arrow.8174203a5d4fc44f5247.svg",
     "static/media/icon-arrow2.svg": "/confilogi/static/media/icon-arrow2.16bc69627be361cc6fa3.svg",
     "main.15c63c2b.css.map": "/confilogi/static/css/main.15c63c2b.css.map",
-    "main.59eade16.js.map": "/confilogi/static/js/main.59eade16.js.map"
+    "main.572217b8.js.map": "/confilogi/static/js/main.572217b8.js.map"
   },
   "entrypoints": [
     "static/css/main.15c63c2b.css",
-    "static/js/main.59eade16.js"
+    "static/js/main.572217b8.js"
   ]
 }
